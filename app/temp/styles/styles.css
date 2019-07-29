@@ -352,10 +352,6 @@ template {
   display: none;
 }
 
-p {
-    font-size: 69px;
-}
-
 html {
     font-size: 62.5%;
 }
@@ -371,7 +367,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: alana, sans-serif;
-    font-style: normal;
  }
 
 h1 {
@@ -393,7 +388,8 @@ h1 {
     }
 
 h2 {
-    font-size: 3.8em; 
+    font-size: 3.8em;  
+    font-family: alana, sans-serif; 
  }
 
 @media (min-width: 800px) {
@@ -492,6 +488,37 @@ h6 {
      height: 100vh;
  }
 
+.blog-body__text {
+         max-width: 65.6rem;
+         margin: 0 auto;
+     }
+
+.blog-body__text h2 {
+            font-family: Futura PT, sans-serif;
+            font-weight: 300;
+            font-size: 3em;
+        }
+
+.blog-body__tags {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+     }
+
+.blog-body__tags__author {
+            font-size: 1em;
+        }
+
+.blog-body__tags__date {
+            font-size: 1em;
+        }
+
 .blog-head {
      text-align: center;
 }
@@ -507,7 +534,7 @@ h6 {
          color: #C1A87D;
          text-align: center;
          font-size: 2em;
-         font-family: futura-pt, sans-serif;
+         font-family: Futura PT, sans-serif;
          font-weight: 300;
          margin: .5rem 0 0 0; 
     }
